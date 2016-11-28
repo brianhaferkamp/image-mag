@@ -20,8 +20,6 @@ This is a website design for a new kind of photography magazine or portfolio. It
 ### Mobile view (iPhone 6)
 ![alt text](http://highwaywebconsulting.com/wp-content/uploads/2016/11/imageMag4.jpg "iPhone mobile view of the site")
 
----
-
 ## Download
 You can download the full development package or just use the compiled files (HTML, CSS, JS). The compiled files are located in the /build folder. 
 
