@@ -27,8 +27,4 @@ Temporary Items
 .sass-cache
 
 
-### NodeJS ###
-node_modules
 
-### Bower ###
-source/vendors
