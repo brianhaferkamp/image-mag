@@ -1,0 +1,748 @@
+/* --------------------------------------------------------
+   Core mixins
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Reset and dependencies
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Core CSS
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Components
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Components w/ JavaScript
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Utility classes
+   -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Custom application specific styles
+   -------------------------------------------------------- */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-size: 18px;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.articles {
+  position: relative;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+.article {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.artist-article {
+  display: none;
+  background-color: #f9f9f9;
+  padding-bottom: 2em;
+  padding: 0 .5em 2em;
+  display: none;
+}
+
+.article-header {
+  padding: 10px 5px;
+}
+
+.article-header h3,
+.article-header h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.article-header h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.article-header h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: initial;
+  font-style: italic;
+}
+
+.article-1 {
+  background-image: url(https://filtergrade.com/wp-content/uploads/2014/08/Steve-McCurry-Portrait-Photography-in-India-1024x692.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.article-2 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/21/Adams_The_Tetons_and_the_Snake_River.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.article-3 {
+  background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-141092249-1500x1000.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.article-4 {
+  background-image: url(http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-landscapes-mountains-sea-lakes-awesome/z-wallpaper-dark-grass-landscape-with-tree.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  background-image: url(http://law.depaul.edu/academics/study-abroad/berlin-germany/PublishingImages/Berlin-OberbaumBridge_1600.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.masthead {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 50;
+}
+
+.masthead h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -5px;
+  font-size: 5em;
+  line-height: 1;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.masthead h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  line-height: 1.3;
+}
+
+.caption {
+  text-align: right;
+  color: white;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.caption h3,
+.caption h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.caption h3 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+}
+
+.caption h4 {
+  font-style: italic;
+}
+
+.featured-article {
+  background-color: #f9f9f9;
+  padding-bottom: 2em;
+  padding: 0 .5em 2em;
+  display: none;
+}
+
+.artist-article-header {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  padding: 1.4em 1em 0;
+  text-transform: capitalize;
+}
+
+.artist-statement {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
+  -webkit-column-width: 300px;
+     -moz-column-width: 300px;
+          column-width: 300px;
+  padding: 1em 3em 3em;
+  line-height: 1.4;
+}
+
+.artist-statement p:nth-child(2) {
+  margin-top: 0;
+}
+
+.artist-statement-header {
+  text-transform: uppercase;
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all;
+  letter-spacing: 1px;
+  color: #666;
+  margin: .8em 0;
+}
+
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery__image {
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.gallery__image-1 {
+  background-image: url(http://www.pullmanhotels.com/imagerie/destinations/city/berlin-1400x788-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-2 {
+  background-image: url(http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Germany/Berlin/Berlin%20cathedral-xlarge.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-3 {
+  background-image: url(http://www.whitecase.com/sites/whitecase/files/images/locations/Berlin_Tablet_1920x960.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-4 {
+  background-image: url(http://2.bp.blogspot.com/-xdgCe7T7-t8/UjeDbTHL8gI/AAAAAAACqA8/o6VxjNhRwcI/s1600/Beelitz-Heilsta%CC%88tten+abandoned+Berlin+hospital+P1110491.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-5 {
+  background-image: url(http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1428071023/BERLIN0415-cafe.jpg?itok=le4GzYyP);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-6 {
+  background-image: url(https://i.ytimg.com/vi/3gVhkU4sqr4/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-7 {
+  background-image: url(http://2.bp.blogspot.com/-j9We0RJXXeA/VK9UC29HMDI/AAAAAAACxCM/gtP4RZ9DpWA/s1600/Abandoned%2BBerlin%2BSpreepark%2BAmusement%2BFun%2BPark-9987.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image-8 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/71/a0/c3/71a0c337efcaa96cf5ecb63bd72d3f55.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-1 {
+  background-image: url(http://kiranvillage.org/wp-content/uploads/2013/11/o-INDIA-CHILDREN-STUNTED-facebook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-2 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/f6/8f/50/f68f5060eee6fddb15761901c4e48947.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-3 {
+  background-image: url(https://peterknightphotography.files.wordpress.com/2014/12/psk_45551.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-4 {
+  background-image: url(https://talecup.com/wp-content/uploads/2015/06/childlabor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-5 {
+  background-image: url(http://1.bp.blogspot.com/-vd5dvkapQ7Y/VV9mWDptGEI/AAAAAAAAABc/m4fANsDd0zI/s1600/indian-village-children-online-masala.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-6 {
+  background-image: url(http://meghanraul.com/website/jnaacascade/images/31.jpg?i=1);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-1 .gallery__image-7 {
+  background-image: url(https://www.thenation.com/wp-content/uploads/2016/08/India_child_labor_ap_img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-1 {
+  background-image: url(http://i.imgur.com/KhDzRqR.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-2 {
+  background-image: url(http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2014/05/jacksonlake-hiking-7HKS1074-1280x853.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-3 {
+  background-image: url(https://content-oars.netdna-ssl.com/wp-content/uploads/2015/12/jbailie-jackson_lake-081511-3065.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-4 {
+  background-image: url(https://dalocollis.files.wordpress.com/2013/10/jackson-grand-tetons-53hdr.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-5 {
+  background-image: url(http://historythings.com/wp-content/uploads/2016/02/teton3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-6 {
+  background-image: url(https://i.ytimg.com/vi/ebIaNVpwG74/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-7 {
+  background-image: url(http://i.imgur.com/QKiy0ye.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-2 .gallery__image-8 {
+  background-image: url(http://manofdepravity.com/wp-content/uploads/2009/06/grand-tetons-light-through-clouds.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-1 {
+  background-image: url(https://www.goodfreephotos.com/albums/people/portrait-of-a-young-women.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-2 {
+  background-image: url(http://cdn.skim.gs/images/v1/msi/tmcdttthlbvu7lsfyc0e/meet-the-amazing-young-women-who-created-a-tampon-video-game);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-3 {
+  background-image: url(http://www.usnews.com/cmsmedia/7b/79/dd3c8bd54a1ca5d141f99e3dd29a/160219-hillaryyoungwomen-editorial.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-4 {
+  background-image: url(http://www.aidschicago.org/resources/content/6/5/8/images/afc_5305---edited-for-homepage.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-5 {
+  background-image: url(http://i.huffpost.com/gen/2320506/images/o-TWEEN-GIRLS-facebook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-6 {
+  background-image: url(http://www.norafink.com/wp-content/uploads/2013/07/Image-144-V2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-7 {
+  background-image: url(http://www.piperandclaire.com/_main_site/wp-content/uploads/2015/10/TWEEN-5366.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-3 .gallery__image-8 {
+  background-image: url(http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/9/28/3/Original_Brian-Patrick-Flynn-tween-girl-on-bed_s4x3.jpg.rend.hgtvcom.1280.960.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-1 {
+  background-image: url(http://kids.nationalgeographic.com/content/dam/kids/photos/Countries/A-G/brazil-children.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-2 {
+  background-image: url(http://farm7.static.flickr.com/6037/6260026830_cd0eb98373_o.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-3 {
+  background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res60/159000/159208-Northeast-Region.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-4 {
+  background-image: url(https://aos.iacpublishinglabs.com/question/ad3de1000dc05f390a4147f0f7725858/aq/1400px-788px/landscape-brazil-look-like_84c5adb720f5af4b_GYWWVsGIQOi1Hs7EvOIO0A.jpg?domain=cx.aos.ask.com);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-5 {
+  background-image: url(http://www.walldevil.com/wallpapers/a26/brazil-janeiro-tijuca-barra-background-wallpaper-nature-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-6 {
+  background-image: url(http://www.travel321.net/wp-content/uploads/2016/11/Beautiful-cities-Brazil.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-7 {
+  background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res60/71000/71068-Foz-Do-Iguacu.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#article-4 .gallery__image-8 {
+  background-image: url(https://iambadphotographer.files.wordpress.com/2016/04/img_8555-edit.jpg?w=1200);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 500px) {
+  .article-header {
+    padding: 10px;
+  }
+  .article-header h3 {
+    font-size: 2em;
+  }
+  .article-header h4 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .masthead h1 {
+    font-size: 8em;
+  }
+  .caption h3 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1140px) {
+  .article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    height: 100vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .article-header h3,
+  .article-header h4 {
+    text-align: right;
+  }
+  .article-header h3 {
+    font-size: 3em;
+  }
+  .article-header h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+  .masthead {
+    position: fixed;
+  }
+  .caption h3 {
+    font-size: 3em;
+  }
+  .caption h4 {
+    font-size: 1.3em;
+  }
+}
