@@ -1,0 +1,6 @@
+{
+  "name": "Image Mag",
+  "tagline": "A modern photography magazine/portfolio/project website design",
+  "body": "Image Mag is a concept design for a new kind of online photo magazine. Massive, responsive images and easy-to-understand navigation are at the heart of the design. Would make a perfect portfolio or projects website.\r\n\r\n#####View of the featured image\r\n\r\n#####Click on each large image to reveal an artist statement and more images from the collection or project\r\n\r\n#####Tablet view (iPad)\r\n\r\n#####Mobile View (iPhone 6)\r\n\r\n##About the design\r\n\r\n####Typography\r\n\r\nAll of the typography is imported from Google Fonts. \r\n\r\nHeadings: Fjalla One\r\nParagraph: Catamaran\r\n\r\n####Images\r\n\r\nAll images are found on the web and cannot be used in a real project. They are only used to simulate a realistic portfolio/project site. The expectation is that you will use original or copyright-free photos when using this as a commercial project.\r\n\r\n####Code\r\n\r\nAll of the code was written by Brian Haferkamp and is made available to everyone through GitHub under the GNU GPLv3 license, [which you can read here](http://www.gnu.org/licenses/gpl-3.0.txt). Please respect the license if you want to use the code I wrote.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
